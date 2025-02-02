@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook – Вход или регистрация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgb(218, 217, 217) 50%, white 50%);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 120px;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            max-width: 980px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .left {
+            max-width: 500px;
+        }
+        .left h1 {
+            color: #0866ff;
+            font-size: 56px;
+            margin: 0;
+        }
+        .left p {
+            font-size: 30px;
+        }
+        .right form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            width: 360px;
+        }
+        .input {
+            width: 90%;
+            padding: 12px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .login-btn {
+            background: #1877f2;
+            color: white;
+            font-size: 18px;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background: #166fe5;
+        }
+        .login-btn:active {
+            background: #145db2;
+        }
+        .register-btn {
+            background: #42b72a;
+            color: white;
+            font-size: 16px;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            width: 100%;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .register-btn:hover {
+            background: #36a420;
+        }
+        .register-btn:active {
+            background: #2c8e1b;
+        }
+        .right p {
+            text-align: center;
+            font-size: 14px;
+            max-width: 360px;
+        }
+        .forgot-btn {
+            display: block;
+            background: none;
+            border: none;
+            color: #1877f2;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+            cursor: pointer;
+        }
+        .forgot-btn:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: linear-gradient(to bottom, rgb(218, 217, 217) 10px, white);
+            padding-top: 250px;
+            text-align: left;
+            padding-left: 10%;
+            padding-right: 10%;
+            font-size: 12px;
+            color: #737373;
+        }
+        .footer a {
+            color: #737373;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .languages {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc; 
+        }
+        .footer .links {
+            margin-bottom: 10px;
+        }
+        .footer .languages a {
+            margin: 0 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>facebook</h1>
+            <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+        </div>
+        <div class="right">
+            <form>
+                <input type="text" class="input" placeholder="Электронный адрес или номер телефона" required>
+                <input type="password" class="input" placeholder="Пароль" required>
+                <button type="submit" class="login-btn">Вход</button>
+                <button type="button" class="forgot-btn">Забыли пароль?</button>
+                <hr>
+                <button type="button" class="register-btn">Создать новый аккаунт</button>
+            </form>
+            <p><b>Создать Страницу</b> знаменитости, музыкальной группы или компании.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="languages">
+            <a href="#">Русский</a>
+            <a href="#">Қазақша</a>
+            <a href="#">English (US)</a>
+            <a href="#">Türkçe</a>
+            <a href="#">Bahasa Indonesia</a>
+            <a href="#">中文(简体)</a>
+            <a href="#">Deutsch</a>
+            <a href="#">한국어</a>
+            <a href="#">Shqip</a>
+            <a href="#">Español</a>
+            <a href="#">Português (Brasil)</a>
+            <a href="#"><button>+</button></a>
+        </div>
+        <div class="links">
+            <a href="#">Зарегистрироваться</a>
+            <a href="#">Вход</a>
+            <a href="#">Messenger</a>
+            <a href="#">Facebook Lite</a>
+            <a href="#">Видео</a>
+            <a href="#">Места</a>
+            <a href="#">Игры</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Meta Pay</a>
+            <a href="#">Магазин Meta</a>
+            <a href="#">Meta Quest</a>
+            <a href="#">Ray-Ban Meta</a>
+            <a href="#">Meta AI</a>
+            <a href="#">Instagram</a>
+            <a href="#">Threads</a>
+            <a href="#">Благотворительные акции</a>
+            <a href="#">Услуги</a>
+            <a href="#">Центр информации о выборах</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Центр конфиденциальности</a>
+            <a href="#">Группы</a>
+            <a href="#">Информация</a>
+            <a href="#">Создать рекламу</a>
+            <a href="#">Создать Страницу</a>
+            <a href="#">Разработчикам</a>
+            <a href="#">Вакансии</a>
+            <a href="#">Файлы cookie</a>
+            <a href="#">Рекламные предпочтения</a>
+            <a href="#">Условия использования</a>
+            <a href="#">Справка</a>
+            <a href="#">Загрузка контактов и лица, не являющиеся пользователями</a>
+        </div>
+        <div>&copy; Meta 2025</div>
+    </div>
+</body>
+</html>
