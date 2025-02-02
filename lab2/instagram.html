@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #fafafa;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            margin-top: 32px;
+            width: 100%;
+            
+        }
+
+        #insta{
+            width: 190px;
+            height: 74px;
+            background-size: 176px 186px;
+        }
+
+        .insta-forgot{
+            background: #ffffff;
+            width: 352px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 0.1rem solid rgba(219, 219, 219);
+            padding: 24px 64px;
+        }
+
+        .vhod1{
+            margin: 0 40px 6px;
+        }
+        .vhod2{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            border-radius: 5px;
+            border:  1px solid rgb(219, 219, 219);
+            background-color: #fafafa;
+            color: rgb(38, 38, 38);
+            height: 36px;
+            width: 270px;
+            padding: 9px 0 12px 24px;
+        }
+
+
+        .llog{
+            font-family: Arial;
+            margin: 0 40px 16px;
+            flex-direction: column;
+            display: flex;
+            color: rgb(255, 255, 255);
+            background-color: #4bb4f8;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 15px;
+            border: none;
+        }
+
+        .submit{
+            justify-content: flex-start;
+            flex-direction: column;
+            text-align: center;
+            height: 33px;
+            width: 270px;
+            padding-top: 8px;
+        }
+
+        .line_or_line{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #8e8e8e;
+            font-weight: 600;
+            position: relative;
+            font-size: 13px;
+            margin-left: 39px;
+            margin-right: 30px;
+            margin-top: 30px;
+        }
+
+        .or{
+            color:gray;
+            margin-top:-9px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+
+        .line1{
+            background-color: gray;
+            height: 1px;
+            width: 120px;
+            margin-bottom: 13px;
+        }
+        .facebook{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0px;
+            padding: 0;
+            box-sizing: border-box; 
+            cursor: pointer;
+        }
+        .fab{
+            color:rgb(0, 55 , 107);
+            width: 1.5rem;
+            margin-right: 0.5rem;
+            border-radius: 50%;
+        }
+
+        .facebook span{
+            color:rgb(0, 55 , 107);
+            font-weight: 600;
+            font-size: 15px;
+            vertical-align: middle;
+        }
+
+        .forgot{
+            cursor: pointer;
+            color: #385185;
+            font-size: 0.8rem;
+            text-decoration: none;
+            padding-left: 124px;
+        }
+
+        .no_acc{
+            border: 1px solid rgb(195, 195, 195); 
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px 5px;
+            width: 22rem;
+            height: 60px;
+            background-color: #ffffff;
+        }
+
+        .dont{
+            display: flex;
+            gap: 10px;
+            color: rgb(38, 38, 38);
+            font-size: 13px;
+            margin: 1px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sign{
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0095f6;
+            text-decoration: none;
+        }
+
+        .apps{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 22rem;
+            margin-top: 1.5rem;
+        }
+
+        .get_app{
+            display: block;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .get_it_grom{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #logo_goog{
+            height: 45px;
+            margin-right: 0.2rem;
+            padding-bottom: 1px;
+        }
+
+        .main_body{
+            display: flex;
+        }
+
+        #logo_mic{
+            height: 43px;
+            padding-bottom: 1px;
+        }
+
+        .end{
+            height: 25vh;
+            margin-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(142, 142, 142);
+            font-size: 12px;
+        }
+
+        .name{
+            color: rgb(142, 142, 142);
+            font-size: 12px;
+            text-decoration:  none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main_body">
+        <div class="center">
+            <div class="screen">
+                <div class="photoone">
+                    <img src="img/phone.png" alt="phone">
+                </div>
+            </div>
+
+            <div class="login">
+               
+                <div class="insta-forgot">
+                    <div class="photo3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" id="insta"alt="instaa">
+                    </div>
+                    <div class="vhod">
+                        <div class="vhod1">
+                            <input type="text" class="vhod2" placeholder="Номер телефона, имя пользователя или эл.адрес"></input>
+                        </div>
+                        <div class="vhod1">
+                            <input type="password" class="vhod2" placeholder="Пароль"></input>
+                        </div>
+                        <button class="llog" type="submit">
+                            <div class="submit">Войти</div>
+                        </button>
+                        <div class="line_or_line">
+                            <div class="line1"></div>
+                            <div class="or"> ИЛИ </div>
+                            <div class="line1"></div>
+                        </div>
+                        <div class="facebook">
+                            <img src="img/facebook-icon.png" class = "fab fa-facebook-square">
+                            <span>Войти через Facebook</span> 
+                        </div>
+                        <div><a class="forgot" href="https://www.instagram.com/">Забыли пароль?</a></div>
+                    </div>
+                </div>
+                <div class="no_acc">
+                    <p class="dont">У вас еще нет аккаунта?
+                    <a href="https://www.instagram.com/" class="sign">Зарегистрироваться</span></a></p>
+                </div>
+                <div class="apps">
+                    <div class="get_app">
+                        <span class="get_apps">Установите приложение.</span>
+                    </div>
+                    <div class="get_it_from">
+                        <a href="https://play.google.com/store/apps/details?id=com.instagram.android" class="google">
+                            <img src="img/googleplay.png" id="logo_goog" alt="Get it on Google Play" class="googlea">
+                        </a>
+                        <a href="ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=-9%2C-9%2C1937%2C1037" class="microsoft">
+                            <img src="img/microsoft.png" id="logo_mic" alt="Get it from Microsoft" class="microsofta">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div>
+
+</body>
+</html>
