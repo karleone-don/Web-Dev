@@ -1,7 +1,7 @@
 function addTask() {
-    let input = document.getElementById("taskInput");
-    let text = input.value.trim();
-    if (text === "") return;
+    let task = document.getElementById('taskInput');
+    let input = task.trim();
+    if (input == '') return;
 
     let table = document.getElementById("taskTable").getElementsByTagName("tbody")[0];
     let row = table.insertRow();
