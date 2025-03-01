@@ -1,0 +1,6 @@
+<h2>Photos of Album {{ albumId }}</h2>
+<p *ngIf="!photos.length">No photos found.</p>
+<div *ngFor="let photo of photos">
+  <img [src]="photo.url" [alt]="photo.title">
+</div>
+

@@ -1,0 +1,33 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 8px;
+  }
+  
+  button {
+    background: none;
+    color: #333; /* Тёмно-серый цвет */
+    border: 1px solid #666;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  button:hover {
+    background: #666;
+    color: #fff;
+  }
+  
+  button:active {
+    background: #444;
+    color: #fff;
+  }
+  
+  
