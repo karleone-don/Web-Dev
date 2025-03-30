@@ -23,14 +23,11 @@ export class AlbumsComponent {
     this.albumsService.getAlbums().subscribe(
       (data) => {
         this.albums = data;
-        console.log('Полученные альбомы:', this.albums);
-        this.isLoading = false;
-      },
-      (error) => {
-        console.error('Ошибка при загрузке альбомов:', error);
+        console.log("Succes", this.albums);
         this.isLoading = false;
       }
-    );
+      
+    )
   } 
 
   goToAlbum(albumId: number): void {
@@ -43,7 +40,7 @@ export class AlbumsComponent {
       });
     }
   }  
-  editAlbum(album: any): void {
+  editAlbum(album: any): void {//
     const updatedTitle = prompt('Введите новое название альбома:', album.title);
     if (updatedTitle !== null && updatedTitle.trim() !== '') {
       const updatedAlbum = { ...album, title: updatedTitle };
